@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0b">
+  <title>TOYSZA | Product Review</title>
+
+  <style>
+    :root {
+      --bg: #0b0b0b;
+      --card: #171717;
+      --lime: #b7ff20;
+      --white: #ffffff;
+      --muted: #bdbdbd;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 32px 18px 45px;
+    }
+
+    .brand {
+      color: var(--lime);
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+
+    .line {
+      width: 65px;
+      height: 4px;
+      margin: 16px 0 25px;
+      background: var(--lime);
+      border-radius: 5px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(28px, 6vw, 42px);
+    }
+
+    .intro {
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .product {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      background: var(--card);
+      border: 1px solid #333;
+      border-radius: 14px;
+    }
+
+    .product-image {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      display: block;
+      object-fit: contain;
+      padding: 12px;
+      background: #fff;
+      color: #333;
+    }
+
+    .product-info {
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 10px;
+    }
+
+    .product h2 {
+      font-size: 17px;
+      margin: 0;
+    }
+
+    .review-link {
+      display: block;
+      text-align: center;
+      background: var(--lime);
+      color: #101010;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 12px 8px;
+      border-radius: 8px;
+      margin-top: auto;
+    }
+
+    .review-link:hover {
+      background: #d0ff72;
+    }
+
+    .note {
+      margin-top: 25px;
+      padding: 15px;
+      border-left: 3px solid var(--lime);
+      background: #151515;
+      color: #ddd;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      color: #999;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 25px 13px 35px;
+      }
+
+      .products {
+        gap: 10px;
+      }
+
+      .product-info {
+        padding: 10px;
+      }
+
+      .product h2 {
+        font-size: 14px;
+      }
+
+      .review-link {
+        font-size: 12px;
+        padding: 11px 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <div class="brand">TOYSZA</div>
+    <div class="line"></div>
+
+    <h1>Choose Your Product</h1>
+
+    <p class="intro">
+      Thank you for choosing TOYSZA!
+      Select the product you purchased to visit its Amazon review page.
+      We welcome your honest feedback.
+    </p>
+
+    <section class="products">
+
+      <!-- PRODUCT 1: RC ROCK CRAWLER -->
+      <article class="product">
+        <img
+          class="product-image"
+          src="images/rock-crawler.jpg"
+          alt="TOYSZA RC Rock Crawler"
+          loading="lazy"
+          onerror="this.style.display='none'">
+        <div class="product-info">
+          <h2>RC Rock Crawler</h2>
+          <a class="review-link"
+             href="https://www.amazon.in/review/create-review?asin=B0GWJTG6NR"
+             target="_blank" rel="noopener noreferrer">
+            Review on Amazon →
+          </a>
+        </div>
+      </article>
+
+      <!-- PRODUCT 2: SENSOR CAR -->
+      <article class="product">
+        <img
+          class="product-image"
+          src="images/sensor-car.jpg"
+          alt="TOYSZA Sensor Car"
+          loading="lazy"
+          onerror="this.style.display='none'">
+        <div class="product-info">
+          <h2>Sensor Car</h2>
+          <a class="review-link"
+             href="https://www.amazon.in/review/create-review?asin=B0HDYY1FQD"
+             target="_blank" rel="noopener noreferrer">
+            Review on Amazon →
+          </a>
+        </div>
+      </article>
+
+      <!-- PRODUCT 3: RC FIGHTER PLANE -->
+      <article class="product">
+        <img
+          class="product-image"
+          src="images/fighter-plane.jpg"
+          alt="TOYSZA RC Fighter Plane"
+          loading="lazy"
+          onerror="this.style.display='none'">
+        <div class="product-info">
+          <h2>RC Fighter Plane</h2>
+          <a class="review-link"
+             href="https://www.amazon.in/review/create-review?asin=B0GWJD3SHF"
+             target="_blank" rel="noopener noreferrer">
+            Review on Amazon →
+          </a>
+        </div>
+      </article>
+
+      <!-- PRODUCT 4: MINI RC CAR -->
+      <article class="product">
+        <img
+          class="product-image"
+          src="images/mini-rc-car.jpg"
+          alt="TOYSZA Mini RC Car"
+          loading="lazy"
+          onerror="this.style.display='none'">
+        <div class="product-info">
+          <h2>Mini RC Car</h2>
+          <a class="review-link"
+             href="https://www.amazon.in/review/create-review?asin=B0GWJS6WDG"
+             target="_blank" rel="noopener noreferrer">
+            Review on Amazon →
+          </a>
+        </div>
+      </article>
+
+      <!-- PRODUCT 5: INSTANT PRINT CAMERA -->
+      <article class="product">
+        <img
+          class="product-image"
+          src="images/instant-camera.jpg"
+          alt="TOYSZA Instant Print Camera"
+          loading="lazy"
+          onerror="this.style.display='none'">
+        <div class="product-info">
+          <h2>Instant Print Camera</h2>
+          <a class="review-link"
+             href="https://www.amazon.in/review/create-review?asin=B0GWJV5HM2"
+             target="_blank" rel="noopener noreferrer">
+            Review on Amazon →
+          </a>
+        </div>
+      </article>
+
+    </section>
+
+    <div class="note">
+      Please share your honest experience. All feedback is welcome.
+      Reviews are subject to Amazon's rules and eligibility requirements.
+      No reward is offered for leaving a review.
+    </div>
+
+    <footer>
+      TOYSZA · PLAY · EXPLORE · GROW
+    </footer>
+  </main>
+</body>
+</html>
