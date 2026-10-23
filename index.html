@@ -1,197 +1,237 @@
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0b0b0b">
-<title>TOYSZA | Share Your Experience</title>
-<style>
-:root {
-  --bg: #0b0b0b;
-  --card: #171717;
-  --lime: #b7ff20;
-  --white: #ffffff;
-  --muted: #bdbdbd;
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--white);
-  font-family: Arial, Helvetica, sans-serif;
-}
-header {
-  text-align: center;
-  padding: 30px 16px 18px;
-}
-.logo {
-  font-size: 32px;
-  font-weight: 900;
-  letter-spacing: 3px;
-}
-.logo span { color: var(--lime); }
-header p {
-  color: var(--muted);
-  margin: 10px auto 0;
-  max-width: 480px;
-  line-height: 1.5;
-}
-main {
-  max-width: 960px;
-  padding: 16px;
-  margin: auto;
-}
-.intro {
-  text-align: center;
-  margin: 8px 0 24px;
-}
-.intro h1 {
-  font-size: clamp(25px, 5vw, 38px);
-  margin: 0 0 10px;
-}
-.intro h1 span { color: var(--lime); }
-.intro p {
-  color: var(--muted);
-  line-height: 1.6;
-  margin: 0;
-}
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
-}
-.product {
-  background: var(--card);
-  border: 1px solid #303030;
-  border-radius: 16px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-.product img {
-  width: 100%;
-  height: 220px;
-  object-fit: contain;
-  background: #fff;
-  display: block;
-}
-.product-content {
-  padding: 18px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-.product h2 {
-  font-size: 19px;
-  margin: 0 0 9px;
-}
-.product p {
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.5;
-  margin: 0 0 18px;
-  flex: 1;
-}
-.review-button {
-  display: block;
-  width: 100%;
-  text-align: center;
-  border: 0;
-  border-radius: 8px;
-  background: var(--lime);
-  color: #101010;
-  font-size: 15px;
-  font-weight: 800;
-  text-decoration: none;
-  padding: 14px 10px;
-  cursor: pointer;
-}
-.review-button:hover { background: #d0ff70; }
-.note {
-  text-align: center;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.6;
-  margin: 26px auto;
-  max-width: 650px;
-}
-footer {
-  border-top: 1px solid #292929;
-  text-align: center;
-  padding: 24px 12px 32px;
-  color: var(--muted);
-  font-size: 13px;
-}
-footer strong { color: var(--lime); }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0b">
+  <title>TOYSZA | Share Your Experience</title>
+
+  <style>
+    :root {
+      --bg: #0b0b0b;
+      --card: #171717;
+      --lime: #b7ff20;
+      --white: #ffffff;
+      --muted: #bdbdbd;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 16px 18px;
+    }
+
+    .logo {
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+
+    .logo span {
+      color: var(--lime);
+    }
+
+    header p {
+      color: var(--muted);
+      margin: 10px auto 0;
+      max-width: 480px;
+      line-height: 1.5;
+    }
+
+    main {
+      max-width: 960px;
+      padding: 16px;
+      margin: auto;
+    }
+
+    .intro {
+      text-align: center;
+      margin: 8px 0 24px;
+    }
+
+    .intro h1 {
+      font-size: clamp(25px, 5vw, 38px);
+      margin: 0 0 10px;
+    }
+
+    .intro h1 span {
+      color: var(--lime);
+    }
+
+    .intro p {
+      color: var(--muted);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .product {
+      background: var(--card);
+      border: 1px solid #303030;
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product img {
+      width: 100%;
+      height: 220px;
+      object-fit: contain;
+      background: #fff;
+      display: block;
+    }
+
+    .product-content {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .product h2 {
+      font-size: 19px;
+      margin: 0 0 9px;
+    }
+
+    .product p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0 0 18px;
+      flex: 1;
+    }
+
+    .review-button {
+      display: block;
+      width: 100%;
+      text-align: center;
+      border: 0;
+      border-radius: 8px;
+      background: var(--lime);
+      color: #101010;
+      font-size: 15px;
+      font-weight: 800;
+      text-decoration: none;
+      padding: 14px 10px;
+      cursor: pointer;
+    }
+
+    .review-button:hover {
+      background: #d0ff70;
+    }
+
+    .note {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+      margin: 26px auto;
+      max-width: 650px;
+    }
+
+    footer {
+      border-top: 1px solid #292929;
+      text-align: center;
+      padding: 24px 12px 32px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer strong {
+      color: var(--lime);
+    }
+  </style>
 </head>
+
 <body>
-<header>
-  <div class="logo">TOYS<span>ZA</span></div>
-  <p>Thank you for choosing TOYSZA. We appreciate your order!</p>
-</header>
+  <header>
+    <div class="logo">TOYS<span>ZA</span></div>
+    <p>Thank you for choosing TOYSZA. We appreciate your order!</p>
+  </header>
 
-<main>
-  <section class="intro">
-    <h1>Enjoying your <span>TOYSZA</span> order?</h1>
-    <p>Select the product you purchased to open its Amazon page and share your honest experience. All feedback is welcome.</p>
-  </section>
+  <main>
+    <section class="intro">
+      <h1>Enjoying your <span>TOYSZA</span> order?</h1>
+      <p>Select the product you purchased to open its Amazon page and share your honest experience. All feedback is welcome.</p>
+    </section>
 
-  <section class="products" aria-label="Choose your purchased product">
-    <article class="product">
-      <img src="images/rock-crawler.jpg" alt="TOYSZA RC Rock Crawler" loading="lazy">
-      <div class="product-content">
-        <h2>RC Rock Crawler</h2>
-        <p>Ready for rugged adventures? Tell other customers about your experience.</p>
-        <a class="review-button" href="https://www.amazon.in/review/create-review?asin=B0GWJTG6NR" target="_blank" rel="noopener noreferrer">Review on Amazon</a>
-      </div>
-    </article>
+    <section class="products" aria-label="Choose your purchased product">
+      
+      <!-- Product 1 -->
+      <article class="product">
+        <img src="images/rock-crawler.jpg" alt="TOYSZA RC Rock Crawler" loading="lazy">
+        <div class="product-content">
+          <h2>RC Rock Crawler</h2>
+          <p>Ready for rugged adventures? Tell other customers about your experience.</p>
+          <a class="review-button" href="https://www.amazon.in/review/create-review?asin=B0GWJTG6NR" target="_blank" rel="noopener noreferrer">Review on Amazon</a>
+        </div>
+      </article>
 
-    <article class="product">
-      <img src="images/sensor-car.jpg" alt="TOYSZA Sensor Car" loading="lazy">
-      <div class="product-content">
-        <h2>Sensor Car</h2>
-        <p>Share your experience with your hand-gesture-controlled car.</p>
-        <a class="review-button" href="https://www.amazon.in/review/create-review?asin=B0HDYY1FQD" target="_blank" rel="noopener noreferrer">Review on Amazon</a>
-      </div>
-    </article>
+      <!-- Product 2 -->
+      <article class="product">
+        <img src="images/sensor-car.jpg" alt="TOYSZA Sensor Car" loading="lazy">
+        <div class="product-content">
+          <h2>Sensor Car</h2>
+          <p>Share your experience with your hand-gesture-controlled car.</p>
+          <a class="review-button" href="https://www.amazon.in/review/create-review?asin=B0HDYY1FQD" target="_blank" rel="noopener noreferrer">Review on Amazon</a>
+        </div>
+      </article>
 
-    <article class="product">
-      <img src="images/fighter-plane.jpg" alt="TOYSZA RC Fighter Plane" loading="lazy">
-      <div class="product-content">
-        <h2>RC Fighter Plane</h2>
-        <p>Let other shoppers know how your flying experience went.</p>
-        <a class="review-button" href="https://www.amazon.in/review/create-review?asin=B0GWJD3SHF" target="_blank" rel="noopener noreferrer">Review on Amazon</a>
-      </div>
-    </article>
+      <!-- Product 3 -->
+      <article class="product">
+        <img src="images/fighter-plane.jpg" alt="TOYSZA RC Fighter Plane" loading="lazy">
+        <div class="product-content">
+          <h2>RC Fighter Plane</h2>
+          <p>Let other shoppers know how your flying experience went.</p>
+          <a class="review-button" href="https://www.amazon.in/review/create-review?asin=B0GWJD3SHF" target="_blank" rel="noopener noreferrer">Review on Amazon</a>
+        </div>
+      </article>
 
-    <article class="product">
-      <img src="images/mini-rc-car.jpg" alt="TOYSZA Mini RC Car" loading="lazy">
-      <div class="product-content">
-        <h2>Mini RC Car</h2>
-        <p>Tell other customers what you think of your mini RC car.</p>
-        <a class="review-button" href="https://www.amazon.in/review/create-review?asin=B0GWJS6WDG" target="_blank" rel="noopener noreferrer">Review on Amazon</a>
-      </div>
-    </article>
+      <!-- Product 4 -->
+      <article class="product">
+        <img src="images/mini-rc-car.jpg" alt="TOYSZA Mini RC Car" loading="lazy">
+        <div class="product-content">
+          <h2>Mini RC Car</h2>
+          <p>Tell other customers what you think of your mini RC car.</p>
+          <a class="review-button" href="https://www.amazon.in/review/create-review?asin=B0GWJS6WDG" target="_blank" rel="noopener noreferrer">Review on Amazon</a>
+        </div>
+      </article>
 
-    <article class="product">
-      <img src="images/instant-camera.jpg" alt="TOYSZA Instant Print Camera" loading="lazy">
-      <div class="product-content">
-        <h2>Instant Print Camera</h2>
-        <p>Share your honest thoughts about your camera and printed memories.</p>
-        <a class="review-button" href="https://www.amazon.in/review/create-review?asin=B0GWJV5HM2" target="_blank" rel="noopener noreferrer">Review on Amazon</a>
-      </div>
-    </article>
-  </section>
+      <!-- Product 5 -->
+      <article class="product">
+        <img src="images/instant-camera.jpg" alt="TOYSZA Instant Print Camera" loading="lazy">
+        <div class="product-content">
+          <h2>Instant Print Camera</h2>
+          <p>Share your honest thoughts about your camera and printed memories.</p>
+          <a class="review-button" href="https://www.amazon.in/review/create-review?asin=B0GWJV5HM2" target="_blank" rel="noopener noreferrer">Review on Amazon</a>
+        </div>
+      </article>
 
-  <p class="note">
-    Please review only a product you purchased. Your honest feedback—positive or negative—is appreciated. No reward or incentive is offered for leaving a review.
-  </p>
-</main>
+    </section>
 
-<footer>
-  <strong>TOYSZA</strong> · Play · Explore · Grow
-</footer>
+    <p class="note">
+      Please review only a product you purchased. Your honest feedback—positive or negative—is appreciated. No reward or incentive is offered for leaving a review.
+    </p>
+  </main>
+
+  <footer>
+    <strong>TOYSZA</strong> · Play · Explore · Grow
+  </footer>
 </body>
 </html>
